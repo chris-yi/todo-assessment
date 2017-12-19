@@ -19,6 +19,7 @@ class Todos extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // 44E
   componentDidMount() {
     console.log("Mounted!");
   }
