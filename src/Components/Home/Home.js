@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { connect } from "react-redux";
 import { getTodos } from "../../ducks/todos";
+import Functional from "../Functional/Functional"
 
 // 42H
 class Home extends Component {
@@ -22,6 +23,9 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <Functional
+        name={"Hello"}
+        />
         {/* 42E */}
         <Link to={`/todos`}>
           <button onClick={this.handleGetTodos}>Todos</button>
