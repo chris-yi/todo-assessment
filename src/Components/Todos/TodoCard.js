@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import axios from "axios";
 import { getTodos } from "../../ducks/todos";
+import { Link } from "react-router-dom";
 
 class TodoCard extends Component {
 
@@ -18,7 +19,9 @@ class TodoCard extends Component {
       <div>
         <p>
           {this.props.todo}
+          <Link to={`/todo`}>
           <button>edit</button>
+          </Link>
           <button onClick={this.deleteTodo}>delete</button>
         </p>
       </div>
