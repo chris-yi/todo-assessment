@@ -4,12 +4,6 @@ import axios from "axios";
 import { getTodos } from "../../ducks/todos";
 
 class TodoCard extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-
 
   deleteTodo = () => {
     axios.delete(`/api/delete/${this.props.todo_id}`).then(() => {
