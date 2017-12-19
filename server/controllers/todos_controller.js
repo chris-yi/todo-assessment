@@ -11,7 +11,7 @@ module.exports = {
 
       createTodo: (req, res, next) => {
         const dbInstance = req.app.get("db");
-        console.log("add todo")
+        console.log("creating new todo")
         const {
           todo
         } = req.body;
@@ -36,7 +36,7 @@ module.exports = {
 
 
       editTodo: (req, res, next) => {
-        console.log("function ran!");
+        console.log("editing todo");
         const dbInstance = req.app.get("db");
         const { params } = req;
         const {

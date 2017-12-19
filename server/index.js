@@ -5,10 +5,9 @@ const cors = require("cors");
 const massive = require("massive");
 const todos_controller = require("./controllers/todos_controller");
 const path = require('path');
-
 const app = express();
 
-app.use( express.static( `${__dirname}/../build` ) );
+
 app.use(bodyParser.json());
 app.use(cors());
 
